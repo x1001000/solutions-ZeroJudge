@@ -8,7 +8,7 @@ while True:
   answer2 = 'best case'
   answer3 = 'worst case'
   for grade in grades:
-    answer1 += str(grade) + ' '
+    answer1 += str(grade)+' '
     if grade < 60:
       answer2 = grade
     if answer3=='worst case' and grade >= 60:
