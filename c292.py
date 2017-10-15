@@ -1,4 +1,3 @@
-
 while True:
   try:
     N=int(input())
