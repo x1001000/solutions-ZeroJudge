@@ -3,9 +3,7 @@ while True:
     X=input()
   except:
     break
-  i=0
-  even=0
-  odd=0
+  i,even,odd=0,0,0
   for x in X:
     if i%2:
       even+=int(x)
