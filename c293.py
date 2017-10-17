@@ -19,8 +19,8 @@ while True:
     except:
       upper = test
   print(upper)
-  '''
-  取得輸入的第一行，轉整數存入N和K
+'''
+取得輸入的第一行，轉整數存入N和K
 取得輸入的第二行，排序存入X
 用二分逼進法，找最小直徑
 上界upper初始值為左右兩端座標距離
