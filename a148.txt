@@ -10,7 +10,7 @@ in.的右邊,
 是輸入的字串line.切成數個字串,而成的一個list.
 for.的右邊,
 是in.右邊list.的每一項,依序存入的變數,命名為string.
-in.的左邊,
+for.的左邊,
 是一般項,integer, of string.
 程式的第6行,把輸入字串變成integers,
 程式的第7行,sum of integers的第1個到最後1個,除以integers的第0個,
