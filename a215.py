@@ -3,8 +3,8 @@ while True:
         line = input()
     except:
         break
-    n,m = line.split()
-    n,m = int(n),int(m)
+    n, m = line.split()
+    n, m = int(n), int(m)
     count = 0
     sum = 0
     while True:
