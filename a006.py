@@ -1,9 +1,10 @@
 while True:
     try:
-        a,b,c = input().split()
+        line = input()
     except:
         break
-    a,b,c = int(a),int(b),int(c)
+    a, b, c = line.split()
+    a, b, c = int(a), int(b), int(c)
     D = b**2 - 4*a*c
     if D > 0:
         x1 = (-b + D**0.5) / (2*a)

@@ -1,6 +1,6 @@
 while True:
     try:
-        s = input()
+        line = input()
     except:
         break
-    print('hello,',s)
+    print('hello,',line)

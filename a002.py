@@ -1,8 +1,8 @@
 while True:
     try:
-        s = input()
+        line = input()
     except:
         break
-    a,b = s.split()
-    a,b = int(a),int(b)
+    a, b = line.split()
+    a, b = int(a), int(b)
     print(a+b)
