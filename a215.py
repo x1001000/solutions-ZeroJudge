@@ -6,11 +6,11 @@ while True:
     n, m = line.split()
     n, m = int(n), int(m)
     count = 0
-    sum = 0
+    total = 0
     while True:
         count += 1
-        sum += n
+        total += n
         n += 1
-        if sum > m:
+        if total > m:
             break
     print(count)

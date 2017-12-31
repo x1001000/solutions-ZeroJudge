@@ -1,0 +1,19 @@
+安安你好,
+我是百千,
+我們來寫程式解問題八,
+這題要寫一個,
+從n開始數,數了幾個數,總和會超過m,
+的程式,
+第6行把,line.切成n和m兩個字串,
+第7行把,n和m變成整數,
+第8行把,count.設為0,用來鼠樹,
+第9行把,total.設為0,用來紀錄總和,
+第10行是個while迴圈,意思是,while condition is true, do something.
+因為while.後面的condition.直接寫了個true,
+所以它會一直do something.直到total.大於m,才會give me a break,
+第11行讓,count.每次進while迴圈,就增加1,
+第12行把,n加進total.
+第13行把,n增加1,下一圈的,n,就會是這一圈的,n,+1,
+最後印出count.
+程式就寫完拉送出就ㄟㄒ拉,
+液
