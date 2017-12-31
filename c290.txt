@@ -12,10 +12,10 @@ B用來壘加偶數位數,
 第7行的for迴圈,小寫x依序惟大寫X字串由左至右的每移位,
 因為每一圈先把i增加1,
 所以每一圈的i除以2的餘數,就會是一零一零循環,
-這一圈的integer of x加入ㄟ,
-下一圈的integer of x加入逼,
-下下圈的integer of x加入ㄟ,
-下下下圈的integer of x加入逼,
+這一圈的integer of x加入A.
+下一圈的integer of x加入B.
+下下圈的integer of x加入A.
+下下下圈的integer of x加入B.
 ㄈㄡˋ迴圈跑的圈樹就是大寫X字串的長度,
 最後印出A減B的絕對值,
 程式就寫完拉送出就ㄟㄒ拉,
