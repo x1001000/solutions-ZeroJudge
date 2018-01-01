@@ -12,7 +12,7 @@
 程式第6行,先準備一個空字串,命名為passcode,
 程式第7行,for i, in range of 六,就是i依序設為零一二三四五,
 程式第8行,會執行6次,
-password.第ㄞ位的編碼.減,password.第ㄞ加依位的編碼.的叉,的絕對值,轉成字串,加到passcode.的後面,
+password.第ㄞ位的編碼.減,password.第ㄞ加依位的編碼.的絕對值,轉成字串,加到passcode.的後面,
 否迴圈跑完後印出passcode,
 程式就寫完拉送出就ㄟㄒ拉,
 液
