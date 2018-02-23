@@ -3,11 +3,10 @@ while True:
         X = input()
     except:
         break
-    i, A, B = 0, 0, 0
-    for x in X:
-        i += 1
-        if i%2==1:
-            A += int(x)
+    A, B = 0, 0
+    for i in range(len(X)):
+        if i%2:
+            A += int(X[i])
         else:
-            B += int(x)
+            B += int(X[i])
     print( abs(A-B) )
