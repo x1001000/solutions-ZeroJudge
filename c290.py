@@ -1,12 +1,7 @@
 while True:
     try:
-        X = input()
+        X = list(map(int, input()))
     except:
         break
-    A, B = 0, 0
-    for i in range(len(X)):
-        if i%2:
-            A += int(X[i])
-        else:
-            B += int(X[i])
-    print( abs(A-B) )
+    A, B = sum(X[1::2]), sum(X[::2])
+    print(abs(A-B))
