@@ -1,19 +1,21 @@
-def is_Armstrong_number(n):
-    x = 0
-    for s in str(n):
-        x += int(s)**len(str(n))
-    return True if x == n else False
+def is_Armstrong(X):
+    Y = 0
+    for x in str(X):
+        Y += int(x)**len(str(X))
+    return True if X == Y else False
 
 while True:
     try:
-        n, m = map(int, input().split())
+        n, m = input().split()
     except:
         break
-    there_is_none = True
-    for i in range(n,m+1):
-        if is_Armstrong_number(i):
-            there_is_none = False
-            print(i,end=' ')
-    if there_is_none:
-        print('none',end='')
-    print()
+    
+    Armstrong_numbers = []
+    for i in range(int(n), int(m)+1):
+        if is_Armstrong(i):
+            Armstrong_numbers.append(str(i))
+    
+    if Armstrong_numbers:
+        print(' '.join(Armstrong_numbers))
+    else:
+        print('none')
