@@ -58,6 +58,7 @@ int main(void) {
                 d[k] += 1;}
             do{
                 for(m = k - lens2 + 1, n = 0; n < lens2; m++, n++){
+                    X = 0;
                     if(s1[m] > s2[n]){
                         X = 1001000;
                         for(i = k, j = lens2 - 1; j >= 0; i--, j--){
@@ -66,11 +67,9 @@ int main(void) {
                             s1[i] = result % 10 + '0';}
                         d[k] += 1;
                         break;}
-                    if(s1[m] < s2[n]){
-                        X = -1;
-                        break;}
+                    if(s1[m] < s2[n])
+                        break;
                     if(n == lens2 - 1){
-                        X = 0;
                         d[k] += 1;
                         for(i = k, j = lens2 - 1; j >= 0; i--, j--)
                             s1[i] = '0';}}}while(X > 0);
