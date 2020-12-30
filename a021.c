@@ -7,7 +7,7 @@ int main(void) {
     scanf("%s %c %s", s1, &op, s2);
 
     // Convert char array to INVERTED int array
-    int d1[500], d2[500], d[1000], i, j, k, m, n, X, result, carry = 0, sign;
+    int d1[500], d2[500], d[1000], i, j, k, m, n, True, result, carry = 0, sign;
     for(i = 0; i < 500; i++)
         d1[i] = 0, d2[i] = 0;
     for(i = 0; i < 1000; i++)
@@ -58,9 +58,9 @@ int main(void) {
                 d[k] += 1;}
             do{
                 for(m = k - lens2 + 1, n = 0; n < lens2; m++, n++){
-                    X = 0;
+                    True = 0;
                     if(s1[m] > s2[n]){
-                        X = 1001000;
+                        True = 1001000;
                         for(i = k, j = lens2 - 1; j >= 0; i--, j--){
                             result = carry + s1[i] - s2[j] + 10;
                             carry = result / 10 - 1;
@@ -72,7 +72,7 @@ int main(void) {
                     if(n == lens2 - 1){
                         d[k] += 1;
                         for(i = k, j = lens2 - 1; j >= 0; i--, j--)
-                            s1[i] = '0';}}}while(X > 0);
+                            s1[i] = '0';}}}while(True);
             if(!(k == lens2 -1 && d[k] == 0))
                 printf("%d", d[k]);}}
 
