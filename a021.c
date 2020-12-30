@@ -56,23 +56,24 @@ int main(void) {
                 s1[i] += carry;
                 carry = 0;
                 d[k] += 1;}
-            do{
+            True = 1001000;
+            while(True){
                 for(m = k - lens2 + 1, n = 0; n < lens2; m++, n++){
-                    True = 0;
                     if(s1[m] > s2[n]){
-                        True = 1001000;
                         for(i = k, j = lens2 - 1; j >= 0; i--, j--){
                             result = carry + s1[i] - s2[j] + 10;
                             carry = result / 10 - 1;
                             s1[i] = result % 10 + '0';}
                         d[k] += 1;
                         break;}
-                    if(s1[m] < s2[n])
-                        break;
+                    if(s1[m] < s2[n]){
+                        True = 0;
+                        break;}
                     if(n == lens2 - 1){
+                        True = 0;
                         d[k] += 1;
                         for(i = k, j = lens2 - 1; j >= 0; i--, j--)
-                            s1[i] = '0';}}}while(True);
+                            s1[i] = '0';}}}
             if(!(k == lens2 -1 && d[k] == 0))
                 printf("%d", d[k]);}}
 
